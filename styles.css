@@ -1,0 +1,193 @@
+/**************
+	Reset
+**************/
+* {
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+h1, h3, p {
+	margin: 0;
+}
+
+strong {
+	font-weight: bolder;
+}
+
+/**************************** 
+	The top half of the page 
+*****************************/
+.hero {
+	background-color: lightblue;
+	height: 510px;
+	width: 100%;
+}
+
+header {
+	background-color: orange;
+	min-height: 180px;
+	width: 960px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.search {
+	float: right;
+}
+
+nav {
+	background-color: green;
+	height: 52px;
+	width: 960px;
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+}
+
+nav div {
+	float: left;
+	margin: 18px 32px 0 28px;
+	color: white;
+}
+
+.below_header {
+	background-color: skyblue;
+	width: 960px;
+	min-height: 330px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.banner {
+	background-color: magenta;
+	width: 960px;
+	min-height: 120px;
+	bottom: 40px;
+	position: absolute;
+	text-align: center;
+	color: white;
+	vertical-align: middle;
+}
+
+.banner h1 {
+	margin-top: 20px;
+	font-weight: normal;
+}
+
+.banner p {
+	margin-top: 30px;
+}
+
+
+/****************************
+	Lower half of the page 
+******************************/
+.lower {
+	background-color: purple;
+	height: 760px;
+	width: 100%;
+}
+
+.lower_top {
+	background-color: green;
+	width: 960px;
+	min-height: 170px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.breakout {
+	background-color: lime;
+	height: 180px;
+	width: 300px;
+	display: inline-block;
+	transform: translateY(-20px);
+	margin: 0 8px;
+	text-align: center;
+	position: relative;
+}
+
+.breakout h3 {
+	position: absolute;
+	top: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.breakout p {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.breakout button {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.lower_bottom {
+	background-color: pink;
+	width: 960px;
+	min-height: 540px;
+	margin: 0 auto;
+}
+
+/**************************** 
+	Left lower half of page 
+*****************************/
+
+aside {
+	background-color: lightgreen; 
+	width: 440px;
+	min-height: 480px;
+	float: left;
+}
+
+/*********************** 
+	Media Object 
+************************/
+.media_container {
+	background-color: red;
+	width: 440px;
+	min-height: 100px;
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+
+.media_container img {
+	background-color: black;
+	float: left;
+	width: 100px;
+	height: 100px;
+}
+
+.media_content {
+	background-color: yellow;
+	margin: 0 0 0 100px;
+}
+
+/*****************************
+	Right lower half of page 
+******************************/
+.profile_box {
+	background-color: blue;
+	width: 515px;
+	min-height: 500px;
+	margin-left: 445px; 
+}
+
+.profile {
+	background-color: yellow;
+	width: 155px;
+	margin: 5px 5px 5px 8px;
+	display: inline-block;
+	vertical-align: top;s
+}
+
+.profile img {
+	background-color: black;
+	width: 155px;
+	height: 155px;
+}
