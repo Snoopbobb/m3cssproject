@@ -119,12 +119,18 @@ nav a {
 	min-height: 840px;
 }
 
+main {
+	background-color: #fff;
+	width: 960px;
+	margin: 0 auto;
+	overflow: hidden;
+}
 /******************** 
 	Breakouts 
 *********************/
 
 .breakouts-container {
-	width: 960px;
+	background-color: #D7E1E7;
 	min-height: 170px;
 	margin: 0 auto;
 	text-align: center;
@@ -139,11 +145,11 @@ nav a {
 	margin: 0 8px;
 	text-align: center;
 	position: relative;
-	box-shadow: 0 0 20px -10px #000;
 }
 
 .breakout:first-child {
 	border-top: 4px solid #EA501A;
+	box-shadow: 0 0 20px -10px #000;
 }
 
 .breakout:first-child button {
@@ -153,6 +159,7 @@ nav a {
 
 .breakout:nth-child(2) {
 	border-top: 4px solid #8ECF41;
+	box-shadow: 0 0 20px -10px #000;
 }
 
 .breakout:nth-child(2) button {
@@ -161,7 +168,8 @@ nav a {
 }
 
 .breakout:last-child {
-	border-top: 4px solid #0792D3;ß
+	border-top: 4px solid #0792D3;
+	box-shadow: 0 0 20px -10px #000;
 }
 
 .breakout:last-child button {
@@ -194,27 +202,25 @@ nav a {
 	height: 30px;
 }
 
-main {
-	background-color: #fff;
-	width: 960px;
-	margin: 0 auto;
-	overflow: hidden;
-	box-shadow: 0 0 20px -10px #000;
-}
 
 /**************************** 
 	Left lower half of page 
 *****************************/
+
+section {
+	background-color: #fff;
+	box-shadow: 0 0 20px -10px #000;
+}
+
+/*********************** 
+	Media Objects 
+************************/
 
 aside {
 	width: 440px;
 	float: left;
 	padding: 10px;
 }
-
-/*********************** 
-	Media Objects 
-************************/
 
 .media-container {
 	background-color: #E8F3F9;
