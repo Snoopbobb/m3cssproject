@@ -3,26 +3,22 @@
 **************/
 * {
 	box-sizing: border-box;
-	font-family: sans-serif;
+	font-family: sans-serif, arial;
 }
 
 body, h1, h3, p, img {
 	margin: 0;
 }
 
-strong {
-	font-weight: bolder;
-}
-
-a, a:visited, a:hover, a:active {
+a, a:hover, a:visited {
 	text-decoration: none;
 }
 
 /**************************** 
 	The top half of the page 
 *****************************/
+
 .hero {
-	/*background-color: lightblue;*/
 	background: radial-gradient(ellipse at center, rgba(4,143,168,0) -1%,rgba(4,143,168,0) 0%,rgba(4,143,168,1) 88%,rgba(4,143,168,1) 99%), url(images/bg.jpg);
 	height: 510px;
 	width: 100%;
@@ -30,17 +26,20 @@ a, a:visited, a:hover, a:active {
 }
 
 header {
-	/*background-color: orange;*/
-	min-height: 180px;
+	height: 510px;
 	width: 960px;
 	margin: 0 auto;
 	position: relative;
 }
 
+/***********************
+		Logo
+************************/
+
 header a {
 	font-family: 'Lobster', cursive;
 	color: white;
-	font-size: 4em;
+	font-size: 3em;
 }
 
 .search {
@@ -48,15 +47,16 @@ header a {
 	margin-top: 10px;
 	margin-right: 5px;
 	background-color: transparent;
-	height: 25px;
+	height: 30px;
 	width: 150px;
 	border: 1px solid #eee;
 }
 
 header button {
 	float: right;
+	height: 30px;
 	margin-top: 10px;
-	background-color: red;
+	background-color: #EA501A;
 	border: none;
 	border-radius: 5px;
 	color: white;
@@ -64,14 +64,14 @@ header button {
 }
 
 nav {
-	/*background-color: green;*/
 	height: 52px;
-	width: 960px;
 	position: absolute;
-	bottom: 0;
+	top: 100px;
+	left: 0;
+	right: 0;
 	text-align: center;
-	border-top: 1px solid #eee;
-	border-bottom: 1px solid #eee;
+	border-top: 1px solid rgba(255, 255, 255, .4);
+	border-bottom: 1px solid rgba(255, 255, 255, .4);
 }
 
 nav div {
@@ -82,19 +82,10 @@ nav div {
 nav a {
 	font-size: 1em;
 	display: inline-block;
-	margin: 20px;
-}
-
-.below_header {
-	/*background-color: skyblue;*/
-	width: 960px;
-	min-height: 330px;
-	margin: 0 auto;
-	position: relative;
+	margin: 18px 20px 0px 20px;
 }
 
 .banner {
-	/*background-color: magenta;*/
 	width: 960px;
 	min-height: 120px;
 	bottom: 40px;
@@ -106,7 +97,11 @@ nav a {
 
 .banner h1 {
 	margin-top: 20px;
-	font-weight: normal;
+	font-weight: lighter;
+}
+
+.banner h1 strong {
+	font-weight: 900;
 }
 
 .banner p {
@@ -117,27 +112,25 @@ nav a {
 /****************************
 	Lower half of the page 
 ******************************/
-.lower {
-	/*background-color: purple;*/
-	background-color: #D7E1E7;
-	height: 760px;
-	width: 100%;
-}
 
-.lower_top {
-	/*background-color: green;*/
-	width: 960px;
-	min-height: 170px;
-	margin: 0 auto;
-	text-align: center;
+.main-container {
+	background-color: #D7E1E7;
+	width: 100%;
+	min-height: 840px;
 }
 
 /******************** 
 	Breakouts 
 *********************/
 
+.breakouts-container {
+	width: 960px;
+	min-height: 170px;
+	margin: 0 auto;
+	text-align: center;
+}
+
 .breakout {
-	/*background-color: lime;*/
 	background-color: #fff;
 	height: 180px;
 	width: 300px;
@@ -146,6 +139,7 @@ nav a {
 	margin: 0 8px;
 	text-align: center;
 	position: relative;
+	box-shadow: 0 0 20px -10px #000;
 }
 
 .breakout:first-child {
@@ -200,11 +194,12 @@ nav a {
 	height: 30px;
 }
 
-.lower_bottom {
-	/*background-color: pink;*/
+main {
+	background-color: #fff;
 	width: 960px;
-	min-height: 540px;
 	margin: 0 auto;
+	overflow: hidden;
+	box-shadow: 0 0 20px -10px #000;
 }
 
 /**************************** 
@@ -212,55 +207,48 @@ nav a {
 *****************************/
 
 aside {
-	/*background-color: lightgreen; */
-	background-color: #fff;
 	width: 440px;
-	min-height: 540px;
 	float: left;
 	padding: 10px;
 }
 
 /*********************** 
-	Media Object 
+	Media Objects 
 ************************/
-.media_container {
-	/*background-color: red;*/
+
+.media-container {
 	background-color: #E8F3F9;
 	min-height: 100px;
 	overflow: hidden;
 	margin-bottom: 10px;
 }
 
-.media_content h3 {
+.media-content h3 {
 	color: #A8BCDD;
 	margin-bottom: 5px;
 }
 
-.media_container img {
-	/*background-color: black;*/
+.media-container img {
 	float: left;
 	width: 100px;
 	height: 100px;
 }
 
-.media_content {
-	/*background-color: yellow;*/
+.media-content {
 	margin: 15px 0 0 110px;
 }
 
 /*****************************
 	Right lower half of page 
 ******************************/
-.profile_box {
-	/*background-color: blue;*/
-	background-color: #fff;
+
+.profile-box {
 	width: 515px;
 	min-height: 540px;
 	margin-left: 440px; 
 }
 
 .profile {
-	/*background-color: yellow;*/
 	background-color: #8ECF41;
 	width: 155px;
 	margin: 10px 5px 5px 5px;
@@ -270,16 +258,16 @@ aside {
 }
 
 .profile h3 {
-	padding: 7px 0;
+	padding: 7px;
 	color: #717407;
 }
 
 .profile img {
-	/*background-color: black;*/
 	width: 155px;
 	height: 155px;
 }
+
 .profile p{
 	background-color: #E3EFD6;
-	padding: 7px 0;
+	padding: 7px;
 	}	
